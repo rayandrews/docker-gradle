@@ -7,4 +7,4 @@ services:
 
 script:
   - docker build -t rayandrew:docker-gradle .
-  - docker run -v rayandrew:docker-gradle
+  - docker run rayandrew:docker-gradle
