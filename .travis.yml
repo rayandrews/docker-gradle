@@ -1,0 +1,10 @@
+sudo: required
+
+dist: trusty
+
+services:
+  - docker
+
+script:
+  - docker build -t rayandrew:docker-gradle .
+  - docker run -v rayandrew:docker-gradle
